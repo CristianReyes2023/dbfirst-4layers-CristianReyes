@@ -7,23 +7,23 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.Data.Configuration;
-public class CityConfiguration : IEntityTypeConfiguration<City>
+public class StateConfiguration : IEntityTypeConfiguration<State>
 {
-    public void Configure(EntityTypeBuilder<City> builder)
+    public void Configure(EntityTypeBuilder<State> builder)
     {
         builder.HasKey(e => e.Id).HasName("PRIMARY");
 
-        builder.ToTable("city");
+        builder.ToTable("state");
 
-        builder.HasIndex(e => e.IdstateFk, "IX_city_IdstateFk");
+        builder.HasIndex(e => e.IdcountryFk, "IX_state_IdcountryFk");
 
         builder.Property(e => e.Name)
             .IsRequired()
             .HasMaxLength(50)
             .HasColumnName("name");
 
-        builder.HasOne(d => d.IdstateFkNavigation).WithMany(p => p.Cities)
-            .HasForeignKey(d => d.IdstateFk)
+        builder.HasOne(d => d.IdcountryFkNavigation).WithMany(p => p.States)
+            .HasForeignKey(d => d.IdcountryFk)
             .OnDelete(DeleteBehavior.ClientSetNull);
     }
 }
