@@ -17,6 +17,9 @@ builder.Services.AddDbContext<ejemplodb4layersContext>(optionsBuilder => // 2611
 });
 
 
+{
+    
+}
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,7 +28,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    try{
+        var context = services.GetRequiredService<ejemplodb4layersContext>();
+        await context.Database.MigrateAsync();
+    }
+    catch(Exception ex)
+    {
+        var _logger = loggerFactory.CreateLogger<ejemplodb4layersContext>();
+        _logger.LogError(ex, "Ocurrio un error durante la migracion");
+    }
+}
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
