@@ -14,7 +14,7 @@ public class CountryController : BaseController
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public CountryController(IUnitOfWork unitOfWork,IMapper mapper)
+    public CountryController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
@@ -28,7 +28,7 @@ public class CountryController : BaseController
         var results = await _unitOfWork.Countries.GetAllAsync();
         return _mapper.Map<List<CountryDto>>(results);
     }
-    
+
     [HttpGet("{id}")] // 2611
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -36,6 +36,20 @@ public class CountryController : BaseController
     public async Task<ActionResult<CountryDto>> Get(int id)
     {
         var result = await _unitOfWork.Countries.GetByIdAsync(id);
+        if (result == null)
+        {
+            return NotFound();
+        }
+        return _mapper.Map<CountryDto>(result);
+    }
+
+    [HttpGet("getCountryByName/{Name}")] // 2611
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<CountryDto>> GetCountryByName(string name)
+    {
+        var result = await _unitOfWork.Countries.GetCountryByName(name);
         if (result == null)
         {
             return NotFound();
