@@ -49,3 +49,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//Se creo el base entity ya que en dbfirst no se genera, se cambia el id por el basentity
