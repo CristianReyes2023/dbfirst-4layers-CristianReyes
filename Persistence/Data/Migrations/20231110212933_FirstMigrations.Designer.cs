@@ -11,8 +11,8 @@ using Persistence.Data;
 namespace Persistence.Data.Migrations
 {
     [DbContext(typeof(ejemplodb4layersContext))]
-    [Migration("20231107175918_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20231110212933_FirstMigrations")]
+    partial class FirstMigrations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

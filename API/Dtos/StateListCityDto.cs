@@ -7,6 +7,7 @@ using Domain.Entities;
 namespace API.Dtos;
 public class StateListCityDto
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public List<CityDto> Cities { get;set;}
 }

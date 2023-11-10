@@ -33,5 +33,3 @@ public partial class ejemplodb4layersContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }
-
-   

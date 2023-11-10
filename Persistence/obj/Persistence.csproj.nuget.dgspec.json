@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Persistence\\Persistence.csproj": {}
+    "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj": {
+    "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\APM02-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\obj\\",
+        "projectPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\fojc\\.nuget\\packages\\",
+        "outputPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APM02-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fojc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -71,17 +71,17 @@
         }
       }
     },
-    "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Persistence\\Persistence.csproj": {
+    "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\APM02-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Persistence\\obj\\",
+        "projectPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\fojc\\.nuget\\packages\\",
+        "outputPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APM02-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fojc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj"
+              "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj"
               }
             }
           }

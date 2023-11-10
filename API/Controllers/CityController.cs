@@ -42,6 +42,19 @@ public class CityController : BaseController
         }
         return _mapper.Map<CityDto>(result);
     }
+    [HttpGet("GetCustomerByCity/{name}")] // 2611
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<CityDto>> GetCustomersByCity(string name)
+    {
+        var result = await _unitOfWork.Cities.GetCustomersByCity(name);
+        if (result == null)
+        {
+            return NotFound();
+        }
+        return _mapper.Map<CityDto>(result);
+    }
     [HttpPost] // 2611
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
