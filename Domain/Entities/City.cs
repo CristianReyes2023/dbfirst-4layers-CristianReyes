@@ -12,5 +12,5 @@ public partial class City : BaseEntity
 
     public virtual ICollection<Customer> Customers { get; set; } = new List<Customer>();
 
-    public virtual State IdstateFkNavigation { get; set; }
+    public virtual State IdstateFkNavigation { get; set; } = null!;
 }

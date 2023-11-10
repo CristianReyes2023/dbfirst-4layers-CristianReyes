@@ -43,13 +43,26 @@ public class CountryController : BaseController
         return _mapper.Map<CountryDto>(result);
     }
 
-    [HttpGet("getCountryByName/{Name}")] // 2611
+    [HttpGet("getCountryByName/{name}")] // 2611
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<CountryDto>> GetCountryByName(string name)
     {
         var result = await _unitOfWork.Countries.GetCountryByName(name);
+        if (result == null)
+        {
+            return NotFound();
+        }
+        return _mapper.Map<CountryDto>(result);
+    }
+    [HttpGet("GetCounrtyByNameAndStates/{name}")] // 2611
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<CountryDto>> GetCountryByNameStates(string name)
+    {
+        var result = await _unitOfWork.Countries.GetCountryByNameStates(name);
         if (result == null)
         {
             return NotFound();

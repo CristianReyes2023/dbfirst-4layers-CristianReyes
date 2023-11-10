@@ -17,10 +17,11 @@ public class CountryRepository : GenericRepository<Country>, ICountryRepository
         _context = context;
     }
 
-    public async Task<Country> GetCounrtyByNameAndStates(string country)
+    public async Task<Country> GetCountryByNameStates(string country)
     {
         return await _context.Countries.Where(x => x.Name.Trim().ToLower() == country.Trim().ToLower())
         .Include(x=>x.States)
+        .ThenInclude(x=>x.Cities)
         .FirstAsync();
     }
 

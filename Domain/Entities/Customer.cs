@@ -16,7 +16,7 @@ public partial class Customer : BaseEntity
 
     public int IdcityFk { get; set; }
 
-    public virtual PersonType IdTipoPersonaFkNavigation { get; set; }
+    public virtual PersonType IdTipoPersonaFkNavigation { get; set; } = null!;
 
-    public virtual City IdcityFkNavigation { get; set; }
+    public virtual City IdcityFkNavigation { get; set; } = null!;
 }

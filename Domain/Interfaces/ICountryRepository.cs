@@ -8,7 +8,5 @@ namespace Domain.Interfaces;
 public interface ICountryRepository : IGenericRepository<Country>
 {
     Task<Country> GetCountryByName(string name);
-    Task<Country> GetCounrtyByNameAndStates(string name);
-
-
+    Task<Country> GetCountryByNameStates(string name);
 }

@@ -12,5 +12,5 @@ public partial class State : BaseEntity
 
     public virtual ICollection<City> Cities { get; set; } = new List<City>();
 
-    public virtual Country IdcountryFkNavigation { get; set; }
+    public virtual Country IdcountryFkNavigation { get; set; } = null!;
 }
