@@ -173,3 +173,4 @@ E:\CAMPUSLAND\.NET\proyectos.NET\dbfirst-4layers-CristianReyes\API\obj\Debug\net
 E:\CAMPUSLAND\.NET\proyectos.NET\dbfirst-4layers-CristianReyes\API\obj\Debug\net7.0\API.pdb
 E:\CAMPUSLAND\.NET\proyectos.NET\dbfirst-4layers-CristianReyes\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 E:\CAMPUSLAND\.NET\proyectos.NET\dbfirst-4layers-CristianReyes\API\obj\Debug\net7.0\ref\API.dll
+E:\CAMPUSLAND\.NET\proyectos.NET\dbfirst-4layers-CristianReyes\API\bin\Debug\net7.0\appsettings.Development.json
