@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj": {}
+    "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj": {
+    "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\fojc\\.nuget\\packages\\",
-        "outputPath": "E:\\CAMPUSLAND\\.NET\\proyectos.NET\\dbfirst-4layers-CristianReyes\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\APM02-49\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-49\\Documents\\CristianReyes\\.NET\\proyectos.NET\\dbfirst-4layers\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fojc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
